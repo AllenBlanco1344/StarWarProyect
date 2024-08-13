@@ -2,7 +2,7 @@
  proyecto hecho en base a starwars
 Manual de Usuario de StarWarProyect
 Introducción
-StarWarProyect es una aplicación Python que permite a los fanáticos de Star Wars explorar y gestionar información sobre el universo de Star Wars usando la API SWAPI. Este manual te guiará a través de las principales funcionalidades de la aplicación y cómo utilizarlas.
+StarWarProyect es un programa de Python que permite a los fanáticos de Star Wars explorar y gestionar información sobre el universo de Star Wars usando la API SWAPI. Este manual te guiará a través de las principales funcionalidades de la aplicación y cómo utilizarlas.
 
 Requisitos
 Antes de empezar, asegúrate de tener:
