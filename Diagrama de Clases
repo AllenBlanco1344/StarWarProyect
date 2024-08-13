@@ -1,0 +1,76 @@
+Diagama de clases lo mas detallado posible
+
++-------------------+
+|       Film        |
++-------------------+
+| - title: str       |
+| - episode_id: int  |
+| - release_date: str|
+| - opening_crawl: str|
+| - director: str    |
++-------------------+
+
++---------------------+
+|       Species       |
++---------------------+
+| - name: str         |
+| - height: str       |
+| - classification: str|
+| - homeworld: str    |
+| - language: str     |
+| - characters: List[Character] |
+| - episodes: List[str]|
++---------------------+
+
++---------------------+
+|       Planet        |
++---------------------+
+| - name: str         |
+| - orbital_period: str|
+| - rotation_period: str|
+| - population: str   |
+| - climate: str      |
+| - episodes: List[str]|
+| - characters: List[Character] |
++---------------------+
+
++---------------------+
+|     Character       |
++---------------------+
+| - name: str         |
+| - homeworld: Planet |
+| - episodes: List[str]|
+| - gender: str       |
+| - species: Species  |
+| - starships: List[str] |
+| - vehicles: List[str] |
++---------------------+
+
++---------------------+
+|      Mission        |
++---------------------+
+| - name: str         |
+| - planet: Planet    |
+| - starship: str     |
+| - weapons: List[str]|
+| - members: List[Character] |
++---------------------+
+
+
+
+
+Diagrama de Clases
+Classes:
+
+Film
+Species
+Planet
+Character
+Mission
+Relaciones:
+
+Film: No tiene relaciones directas con otras clases en el contexto actual.
+Species: Tiene una relación con Planet (a través de homeworld) y con Character (a través de characters).
+Planet: Tiene una relación con Character (a través de characters) y con Film (a través de episodes).
+Character: Tiene relaciones con Planet (a través de homeworld), Species (a través de species), Starship (a través de starships), y Vehicle (a través de vehicles).
+Mission: No tiene relaciones directas con otras clases en el contexto actual, pero puede referirse a Planet y Character indirectamente.
